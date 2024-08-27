@@ -1,0 +1,117 @@
+﻿:root{
+    --cor-primaria: #000000;
+    --cor-secundaria: #b3aca4;
+    --cor-terciaria: #003f69;
+    --cor-hover: #157a8c;
+    
+    --fonte-primaria: "Krona One", sans-serif;
+    --fonte-secundaria: "Montserrat", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--fonte-secundaria);
+    background-color: var(--cor-secundaria)
+}
+
+.cabecalho {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.cabecalho__imagem {
+    width: 100px;
+    height: auto;
+}
+
+.apresentacao {
+    flex: 1; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.apresentacao__conteudo__caixa-esquerda {
+    width: 40%;
+    height: 70%;
+}
+
+.apresentacao__conteudo__titulo {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-family: var(--fonte-primaria);
+    color: var(--cor-primaria);
+}
+
+.apresentacao__conteudo__texto {
+    width: 100%;
+    height: 80%;
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 20px;
+    resize: none;
+    box-sizing: border-box;
+}
+
+.apresentacao__conteudo__caixa-direita {
+    width: 30%; 
+    height: 70%; 
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+    display: flex;
+    align-items: flex-start; 
+    justify-content: flex-start; 
+    padding: 10px; 
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+}
+
+.apresentacao__conteudo__caixa-direita__texto {
+    color: #808080;
+    font-size: 20px;
+    margin: 0;
+}
+
+.rodape {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    padding: 20px;
+}
+
+.rodape__criptografar,
+.rodape__descriptografar,
+.rodape__copiar {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 12px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.rodape__criptografar {
+    background-color: var(--cor-terciaria);
+    color: var(--cor-secundaria);
+}
+
+.rodape__descriptografar,
+.rodape__copiar {
+    background-color: var(--cor-terciaria);
+    color: var(--cor-secundaria);
+}
+
+.rodape__criptografar:hover,
+.rodape__descriptografar:hover,
+.rodape__copiar:hover {
+    background-color: var(--cor-hover);
+    color: var(--cor-primaria);
+}
